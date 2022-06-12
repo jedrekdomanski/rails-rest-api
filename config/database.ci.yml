@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  host: postgres
+  encoding: unicode
+  pool: 10
+  username: postgres
+  database: sample_rails_rest_api_development
+test:
+  adapter: postgresql
+  host: postgres
+  encoding: unicode
+  pool: 10
+  username: postgres
+  database: sample_rails_rest_api_testt<%= ENV['TEST_ENV_NUMBER'] %>
+  password: postgres

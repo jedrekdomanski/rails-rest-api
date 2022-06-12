@@ -12,3 +12,4 @@ tmp/*
 !/tmp/.keep
 
 .byebug_history
+config/database.yml

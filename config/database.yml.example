@@ -9,7 +9,7 @@ development:
 
 test:
   <<: *default
-  database: sample_rails_rest_api_test-<%= ENV['TEST_ENV_NUMBER'] %>
+  database: sample_rails_rest_api_test<%= ENV['TEST_ENV_NUMBER'] %>
 
 learning:
   <<: *default
