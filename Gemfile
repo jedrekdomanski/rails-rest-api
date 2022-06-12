@@ -10,7 +10,7 @@ gem("jwt", "~> 2.1.0")
 gem("puma", "~> 5.6.4")
 gem("rails", "~> 5.2.3")
 gem("rubocop")
-gem("sqlite3")
+gem 'pg', '~> 1.3'
 
 group :development, :test do
   gem("byebug", platforms: [:mri, :mingw, :x64_mingw])
