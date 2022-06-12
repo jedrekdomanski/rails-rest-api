@@ -5,6 +5,7 @@ development:
   pool: 10
   username: postgres
   database: sample_rails_rest_api_development
+  password: postgres
 test:
   adapter: postgresql
   host: postgres

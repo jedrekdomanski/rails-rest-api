@@ -56,6 +56,8 @@ RUN rm -rf /root/.ssh
 # Dev Image
 FROM base as dev
 
+RUN bundle config --delete without
+RUN bundle config --delete with
 RUN bundle install --with development
 
 RUN apk update && apk upgrade && apk --no-cache add \
@@ -72,6 +74,8 @@ RUN apk update && apk upgrade && apk --no-cache add \
   postgresql \
   && echo ‘gem: --no-document’ > /etc/gemrc
 
+RUN bundle config --delete without
+RUN bundle config --delete with
 RUN bundle install \
   --with test \
   --deployment

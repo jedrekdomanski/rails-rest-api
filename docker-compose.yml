@@ -10,16 +10,13 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile
-    command: rm tmp/pids/server.pid && bundle exec rails s -b 0.0.0.0
+    command: bundle exec rails s -b 0.0.0.0
     volumes:
       - ./coverage:/app/coverage
     depends_on:
       - postgres
     ports:
       - "3000:3000"
-    environment:
-      RAILS_ENV: development
     env_file:
       - .env
 
