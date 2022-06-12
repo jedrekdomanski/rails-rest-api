@@ -12,5 +12,5 @@ test:
   encoding: unicode
   pool: 10
   username: postgres
-  database: sample_rails_rest_api_testt<%= ENV['TEST_ENV_NUMBER'] %>
+  database: sample_rails_rest_api_test<%= ENV['TEST_ENV_NUMBER'] %>
   password: postgres

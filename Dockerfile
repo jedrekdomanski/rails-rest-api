@@ -32,7 +32,7 @@ WORKDIR /app
 COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
 
-RUN gem install bundler:2.2.24
+RUN gem install bundler:2.3.8
 
 RUN bundle install \
   --without development test \
