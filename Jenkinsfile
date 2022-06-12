@@ -12,5 +12,10 @@ pipeline {
         '''
       }
     }
+    stage('Test') {
+      steps {
+        sh 'docker-compose run web bundle exec rspec'
+      }
+    }
   }
 }
